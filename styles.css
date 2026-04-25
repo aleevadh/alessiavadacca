@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: 	#ffb6d7;
+}
+
+
+.square {
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: opacity(70%);
+}
+
+
+
+@font-face {
+  font-family: "cecil";
+  src: url("fonts/cecil.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pixel";
+  src: url("fonts/pixel.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "zamruds";
+  src: url("fonts/zamruds.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "angerraven";
+  src: url("fonts/angerraven.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "faceless";
+  src: url("fonts/faceless.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "maskdownone";
+  src: url("fonts/maskdownone.otf") format("opentype");
+}
+
+
+
+.name {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+
+  font-size: 90px;
+  font-weight: bold;
+  color: #ff00d4;
+
+  font-family: cecil, pixel, zamruds, maskdownone, faceless, angerraven;
+
+
+  z-index: 9999;
+  pointer-events: none;
+}
+
+
+
+.menu {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 40px;
+
+
+  z-index: 9999;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+
+.menu a {
+  color: #ff00d4;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  background-color: #8effa1;
+}
+
+.clippy {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: auto;
+  z-index: 9999;
+}
+
+
+.speech-bubble {
+  position: fixed;
+  bottom: 140px;
+  right: 80px;
+
+  background: white;
+  color: #ffb6d7;
+
+  padding: 12px 16px;
+  border-radius: 12px;
+
+  border: 3px solid #ffb6d7;
+
+  font-size: 20px;
+  max-width: 200px;
+
+  z-index: 10000;
+
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.speech-bubble.show {
+  opacity: 1;
+  transform: scale(1);
+}

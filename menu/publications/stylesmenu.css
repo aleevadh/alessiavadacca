@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "cecil";
+  src: url("../../fonts/zamruds.otf") format("truetype");
+}
+
+
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #ff00d4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff00d4;
+  text-decoration: underline;
+}
+
+
+
+
+.header {
+  text-align: center;
+  font-family: "cecil";
+  margin-bottom: -40px;
+}
+
+.name {
+  font-family: "cecil";
+  font-size: 120px;
+  letter-spacing: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.project p {
+  max-width: 800px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  justify-content: center;
+  width: 60%;
+}
+
+.images img {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.menu a {
+  color: #ff00d4;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  background-color: #8effa1;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff00d4;
+}
